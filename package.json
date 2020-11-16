@@ -1,0 +1,41 @@
+{
+  "name": "typescript-express-starter",
+  "version": "1.0.0",
+  "description": "Created By Erdinç Cürebal",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdinccurebal/typescript-express-starter.git"
+  },
+  "keywords": [
+    "typescript-express-starter",
+    "typescript",
+    "starter",
+    "start",
+    "express"
+  ],
+  "author": "Erdinç Cürebal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erdinccurebal/typescript-express-starter/issues"
+  },
+  "homepage": "https://github.com/erdinccurebal/typescript-express-starter#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.7",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0"
+  },
+  "dependencies": {
+    "@types/multer": "^1.4.4",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "multer": "^1.4.2"
+  }
+}
