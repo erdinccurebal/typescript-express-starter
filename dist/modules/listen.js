@@ -1,9 +1,9 @@
 "use strict";
-exports.__esModule = true;
-var listen = function (app, env, message) {
-    var _a = env.express, host = _a.host, port = _a.port;
-    app.listen(port, host, function () {
+Object.defineProperty(exports, "__esModule", { value: true });
+const listen = (app, env, message) => {
+    const { host, port } = env.express;
+    app.listen(port, host, () => {
         console.log(message);
     });
 };
-exports["default"] = listen;
+exports.default = listen;

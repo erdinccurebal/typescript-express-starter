@@ -21,14 +21,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var express_1 = __importDefault(require("express"));
-var bodyParser = __importStar(require("body-parser"));
-var app = express_1["default"]();
-var listen_1 = __importDefault(require("./modules/listen"));
-var index_1 = __importDefault(require("./routes/index"));
-var env_1 = __importDefault(require("./env"));
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const bodyParser = __importStar(require("body-parser"));
+const app = express_1.default();
+const listen_1 = __importDefault(require("./modules/listen"));
+const index_1 = __importDefault(require("./routes/index"));
+const env_1 = __importDefault(require("./env"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-index_1["default"](app);
-listen_1["default"](app, env_1["default"], 'Express Server Listening...');
+index_1.default(app);
+listen_1.default(app, env_1.default, 'Express Server Listening..');
