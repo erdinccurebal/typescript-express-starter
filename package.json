@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Created By Erdinç Cürebal",
   "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erdinccurebal/typescript-express-starter.git"
